@@ -1,0 +1,37 @@
+h3 {
+  color: $primary-color;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.detail-item {
+  width: 340px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px 0;
+  p {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    line-height: 28px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+#section1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media(max-width: 700px) {
+  #section1 {
+    padding: 0;
+  }
+}

@@ -1,0 +1,35 @@
+#hero {
+  background: url("../assets/images/aaron.png");
+  background-position: right center;
+  background-size: cover;
+  height: 700px;
+  color: #fff;
+  border-bottom: 4px solid $primary-color;
+  .block {
+    position: absolute;
+
+    left: 0;
+    padding: 0 10%;
+    //max-width: 670px;
+    h1{
+      font-weight: bold;
+      font-size: 54px;
+      letter-spacing: 4px;
+    }
+    p {
+      font-family: 'PT Serif', serif;
+      font-style: italic;
+      line-height: 32px;
+    }
+  }
+}
+
+@media(max-width: 1130px) {
+  #hero {
+    height: 400px;
+
+    .block {
+      
+    }
+  }
+}

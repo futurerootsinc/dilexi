@@ -1,0 +1,42 @@
+#exhibition-index {
+  #section1 {
+    @media (max-width: 950px) {
+      margin-top:60px;
+    }
+    #left-sidebar {
+      .top-content {
+        height:52px;
+      }
+      .main-content {
+        #artist-container {
+          padding:20px;
+        }
+      }
+    }
+    #right-content {
+      @media (max-width: 650px) {
+        padding-left:0;
+      }
+      .top-content {
+        h5 {
+          margin:0 auto;
+          padding:0;
+          @media (max-width: 650px) {
+            margin:0;
+          }
+        }
+      }
+      .main-content {
+        @media (max-width: 650px) {
+          padding:0;
+          padding-right:10px;
+        }
+        p {
+          @media (max-width: 650px) {
+            margin:20px 0;
+          }
+        }
+      }
+    }
+  }
+}

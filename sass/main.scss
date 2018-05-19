@@ -1,0 +1,104 @@
+@import "../materialize/sass/materialize.scss";
+
+@import "common/nav.scss";
+@import "common/appointment.scss";
+@import "home/hero.scss";
+@import "home/sections.scss";
+@import "components.scss";
+@import "homepage.scss";
+@import "single-artist.scss";
+@import "single-exhibition.scss";
+@import "exhibition.scss";
+@import "exhibition-index.scss";
+@import "news.scss";
+@import "upcoming.scss";
+@import "about.scss";
+
+
+
+body {
+  color: $primary-color;
+  margin:0;
+}
+
+html {
+  margin: 0 !important;
+}
+
+footer {
+        height: 300px;
+        padding: 20px 40px;
+        background-color: #414042;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: space-between;
+        position: relative;
+        .apple-circle {
+          position: absolute;
+          top: -100px;
+          left: calc(50% - 60px);
+          width: 120px;
+          height: 120px;
+          background: #EFF0F0;
+          border-radius: 60px;
+          img {
+            width: 66px;
+            position: absolute;
+            top: 20px;
+            left: 27px;
+          }
+        }
+        #contact-container {
+            width:100%;
+            flex-direction: row;
+            display: flex;
+            color:white;
+            @media (max-width:720px) {
+                flex-wrap: wrap;
+            }
+            .contact-box {
+                width:33%;
+                margin-right:4%;
+                height:100%;
+                @media (max-width:720px) {
+                    margin-bottom:30px;
+                    width:40%;
+                }
+                h5 {
+                    @media (max-width:720px) {
+                        font-size:14px !important;
+                    }
+                    @media (min-width:720px) and (max-width:850px) {
+                        font-size:18px !important;
+                    }
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 22px;
+                    font-weight: 400;
+                }
+                .img-holder {
+                    width: 33%;
+                    text-align: right;
+                    @media (max-width:720px) {
+                           text-align: center;
+                    }
+                    img {
+                      width: 66px;
+                      height: 66px;
+                    }
+                }
+            }
+            #last-box {
+                @media (max-width:850px) {
+                    padding-left: 0;
+                }
+                @media (max-width:720px) {
+                    width:100%;
+                }
+
+                display:flex;
+                flex-direction: row;
+                margin-right:0;
+            }
+        }
+    }

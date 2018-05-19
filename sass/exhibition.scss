@@ -1,0 +1,15 @@
+#exhibition {
+  #section1 {
+    margin-top:40px;
+    @media (max-width: 950px) {
+      margin-top:60px;
+    }
+    .hide {
+      display:none;
+    }
+    .showing {
+      display:block;
+    }
+  }
+  
+}
